@@ -11,6 +11,4 @@ canvas
 .content{
       position:absolute;
       z-index:0;
-      left:12px;
-      top:10px;
   }
