@@ -26,6 +26,8 @@ function authorize()
   if(inicjaly == "MS")
   {
     alert("wytyczne");
+    document.getElementById('btn').style.color = "blue";
+    colorek = '#0000FF'
   } else 
   {
     alert("nieprawidłowe inicjały")
