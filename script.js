@@ -19,14 +19,28 @@ var drops = [];
 for (var i = 0; i < columns; i++) {
   drops[i] = 1;
 }
-
+var colorek = "#0f0"
+function authorize()
+{
+  let inicjaly = prompt("wprowadź zwoje inicjały").toUpperCase();
+  if(inicjaly == "MS")
+  {
+    alert("wytyczne");
+  } else 
+  {
+    alert("nieprawidłowe inicjały")
+    document.getElementById('btn').style.color = "red";
+    colorek = '#ff0000'
+  }
+}
 // Setting up the draw function
 function draw() {
   ctx.fillStyle = 'rgba(0, 0, 0, .1)';
   ctx.fillRect(0, 0, canvas.width, canvas.height);
   for (var i = 0; i < drops.length; i++) {
     var text = letters[Math.floor(Math.random() * letters.length)];
-    ctx.fillStyle = '#0f0';
+    ctx.fillStyle = colorek;
+    //ctx.fillStyle = '#ff0000';
     ctx.fillText(text, i * fontSize, drops[i] * fontSize);
     drops[i]++;
     if (drops[i] * fontSize > canvas.height && Math.random() > .95) {
@@ -37,10 +51,3 @@ function draw() {
 
 // Loop the animation
 setInterval(draw, 33);
-
-function authorize()
-{
-  let inicjaly = prompt("wprowadź zwoje inicjały");
-  if(inicjaly == "ms")
-  alert("wytyczne");
-}
