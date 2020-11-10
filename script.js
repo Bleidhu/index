@@ -37,3 +37,10 @@ function draw() {
 
 // Loop the animation
 setInterval(draw, 33);
+
+function authorize()
+{
+  let inicjaly = prompt("wprowadź zwoje inicjały");
+  if(inicjaly == "ms")
+  alert("wytyczne");
+}
