@@ -20,15 +20,18 @@ for (var i = 0; i < columns; i++) {
   drops[i] = 1;
 }
 var colorek = "#0f0";
-var jastrzebie = ["AŁ", "A", "O", "M", "AG"];
-var puchacze = ["PK", "JS", "FK", "KD", "LB"];
-var wiewiorki = ["JW", "NS", "MC", "FG", "AK"];
+var jastrzebie = ["ARŁ", "ALW", "OLM", "M", "ADG", "MAJ"];
+var puchacze = ["PIK", "JĘS", "FRK", "KRD", "LEB"];
+var wiewiorki = ["JEW", "NIS", "MIC", "FRG", "ADK", "MIJ"];
+let licznik = 10;
 function authorize()
 {
-  let inicjaly = prompt("wprowadź swoje inicjały").toUpperCase();
+  let inicjaly = prompt("wprowadź dwie pierwsze litery swojego imienia oraz pierwszą literę nazwiska. (Jan Kowalski => JAK)").toUpperCase();
+  inicjaly = inicjaly.replace(/\s/g, '') 
   if(jastrzebie.includes(inicjaly) || puchacze.includes(inicjaly) || wiewiorki.includes(inicjaly))
   {
     document.getElementById('btn').style.color = "blue";
+    document.getElementById('edit').innerHTML = "Odblokowano";
     colorek = '#0000FF'
     if(jastrzebie.includes(inicjaly))
     {
@@ -42,7 +45,16 @@ function authorize()
     }
   } else 
   {
+    if(licznik==0)
+    {
+      alert("przekroczono limit prób skontaktuj się z") ;
+      document.getElementById('edit').innerHTML = "przekroczono limit prób skontaktuj się z";
+    }else
+    {
+    licznik--;
     alert("nieprawidłowe inicjały")
+    document.getElementById('edit').innerHTML = "Naruszenie bezpieczeństwa. Pozostało: " + licznik + " prób";
+    }
     document.getElementById('btn').style.color = "red";
     colorek = '#ff0000'
   }
