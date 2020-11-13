@@ -17,11 +17,20 @@ canvas
   	justify-content: center;
   	align-items: center;
 } 
-/* img {
+ img {
     height:90vh;
   }
 @media only screen and (max-width: 600px) {
  img {
     width:200px;
   }
-}*/
+}
+.wiew
+{
+	height:50vh;
+}
+@media only screen and (max-width: 600px) {
+ .wiew {
+    width:25px;
+  }
+}
