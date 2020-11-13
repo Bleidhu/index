@@ -19,15 +19,27 @@ var drops = [];
 for (var i = 0; i < columns; i++) {
   drops[i] = 1;
 }
-var colorek = "#0f0"
+var colorek = "#0f0";
+var jastrzebie = ["AŁ", "A", "O", "M", "AG"];
+var puchacze = ["PK", "JS", "FK", "KD", "LB"];
+var wiewiorki = ["JW", "NS", "MC", "FG", "AK"];
 function authorize()
 {
-  let inicjaly = prompt("wprowadź zwoje inicjały").toUpperCase();
-  if(inicjaly == "MS")
+  let inicjaly = prompt("wprowadź swoje inicjały").toUpperCase();
+  if(jastrzebie.includes(inicjaly) || puchacze.includes(inicjaly) || wiewiorki.includes(inicjaly))
   {
-    alert("wytyczne");
     document.getElementById('btn').style.color = "blue";
     colorek = '#0000FF'
+    if(jastrzebie.includes(inicjaly))
+    {
+      alert("wytycznejastrz");
+    } else if(puchacze.includes(inicjaly))
+    {
+      alert("wytycznepuch");
+    } else if(wiewiorki.includes(inicjaly))
+    {
+      alert("wytycznewiew");
+    }
   } else 
   {
     alert("nieprawidłowe inicjały")
