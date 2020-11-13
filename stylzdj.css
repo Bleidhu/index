@@ -24,6 +24,7 @@ canvas
  img {
     width: 100%;
     height: auto;
+    aspect-ratio: attr(width) / attr(height);
   }
 }
 .wiew
@@ -35,5 +36,6 @@ canvas
  .wiew {
     width: 100%;
     height: auto;
+    aspect-ratio: attr(width) / attr(height);
   }
 }
