@@ -18,24 +18,23 @@ canvas
   	align-items: center;
 } 
  img {
+ 	aspect-ratio: attr(width) / attr(height);
     height:90vh;
   }
-@media only screen and (max-width: 600px) {
+@/*media only screen and (max-width: 600px) {
  img {
     width: 100%;
-    height: auto;
     aspect-ratio: attr(width) / attr(height);
-  }
+  }*/
 }
 .wiew
 {
+	aspect-ratio: attr(width) / attr(height);
 	height:50vh;
 	width: auto;
 }
-@media only screen and (max-width: 600px) {
+/*@media only screen and (max-width: 600px) {
  .wiew {
-    width: 100%;
-    height: auto;
-    aspect-ratio: attr(width) / attr(height);
-  }
+    width: 100%;    aspect-ratio: attr(width) / attr(height);
+  }*/
 }
