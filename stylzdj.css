@@ -13,13 +13,14 @@ canvas
 	height: 100%;
     position:absolute;
     z-index:0;
-  	/*display: flex;
+  	display: flex;
   	justify-content: center;
-  	align-items: center;*/
+  	align-items: center;
 } 
  img {
- 	aspect-ratio: attr(width) / attr(height);
-    width: auto;
+    width: 100%;
+  	height: auto;
+
   }
 /*media only screen and (max-width: 600px) {
  img {
