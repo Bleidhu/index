@@ -13,5 +13,6 @@ p {
  height:100px;
  margin-top:40vh;
  text-transform:uppercase;
- letter-spacing:10px
+ letter-spacing:10px;
+ color: red;
 }
