@@ -35,7 +35,7 @@ function authorize()
     colorek = '#0000FF'
     if(jastrzebie.includes(inicjaly))
     {
-      alert("Idź na północ od twojej lokalizacji. Tam stosując się do przepisów dotrzesz do kilku drzew, ale jedno z nich jest mocno związane z naszą organizacją. Jeżeli nie jesteś pewny przypomnij sobie maila.");
+      alert("Idź na północ od twojej lokalizacji. Tam stosując się do przepisów dotrzesz do kilku drzew, jedno z nich jest mocno związane z naszą organizacją. Jeżeli nie jesteś pewny przypomnij sobie maila.");
     } else if(puchacze.includes(inicjaly))
     {
       alert("W zasięgu twojego wzroku znajduje się agent, który Cię obserwuje, znajdź go a on poda Ci kolejne wskazówki.");
