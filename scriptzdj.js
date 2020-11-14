@@ -5,7 +5,6 @@ var canvas = document.querySelector('canvas'),
 // Setting the width and height of the canvas
 canvas.width = window.innerWidth;
 canvas.height = window.innerHeight;
-
 // Setting up the letters
 var letters = 'ABCDEFGHIJKLMNOPQRSTUVXYZABCDEFGHIJKLMNOPQRSTUVXYZABCDEFGHIJKLMNOPQRSTUVXYZABCDEFGHIJKLMNOPQRSTUVXYZABCDEFGHIJKLMNOPQRSTUVXYZABCDEFGHIJKLMNOPQRSTUVXYZ';
 letters = letters.split('');
@@ -39,3 +38,21 @@ function draw() {
 
 // Loop the animation
 setInterval(draw, 33);
+function komunikat()
+{
+  let haslo = prompt("Podaj rozwiązanie rebusa:").toUpperCase();
+  haslo = haslo.replace(/\s/g, '') 
+  if(haslo == "WIEWIÓRY")
+  {
+    document.getElementById("wiew").innerHTML = "wiewióry";
+    colorek="black";
+  }else if(haslo == "PUCHACZE")
+  {
+    document.getElementById("puch").innerHTML = "puchacze";
+    colorek="black";
+  } else if(haslo == "JASTRZĘBIE")
+  {
+    document.getElementById("jastrz").innerHTML = "jastrzębie";
+    colorek="black";
+  }
+}

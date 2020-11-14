@@ -23,7 +23,7 @@ var colorek = "#0f0";
 var jastrzebie = ["ARŁ", "ALW", "OLM", "M", "ADG", "MAJ"];
 var puchacze = ["PIK", "JĘS", "FRK", "KRD", "LEB"];
 var wiewiorki = ["JEW", "NIS", "MIC", "FRG", "ADK", "MIJ"];
-let licznik = 10;
+let licznik = 5;
 function authorize()
 {
   let inicjaly = prompt("wprowadź dwie pierwsze litery swojego imienia oraz pierwszą literę nazwiska. (Jan Kowalski => JAK)").toUpperCase();
@@ -35,20 +35,20 @@ function authorize()
     colorek = '#0000FF'
     if(jastrzebie.includes(inicjaly))
     {
-      alert("wytycznejastrz");
+      alert("Idź na północ od twojej lokalizacji. Tam stosując się do przepisów dotrzesz do kilku drzew, ale jedno z nich jest mocno związane z naszą organizacją. Jeżeli nie jesteś pewny przypomnij sobie maila.");
     } else if(puchacze.includes(inicjaly))
     {
-      alert("wytycznepuch");
+      alert("W zasięgu twojego wzroku znajduje się agent, który Cię obserwuje, znajdź go a on poda Ci kolejne wskazówki.");
     } else if(wiewiorki.includes(inicjaly))
     {
-      alert("wytycznewiew");
+      alert("Na południe od twojej lokalizacji znajduje się budynek, za którym musisz skręcić w alejkę po lewej stronie tam czeka na Ciebie agent. Pamiętaj, że jest niebezpiecznie i nie możesz zostać zdemaskowany. Dosiądź się do niego, a on da Ci kolejne wskazówki.");
     }
   } else 
   {
     if(licznik==0)
     {
       alert("przekroczono limit prób skontaktuj się z") ;
-      document.getElementById('edit').innerHTML = "przekroczono limit prób skontaktuj się z";
+      document.getElementById('edit').innerHTML = "Przekroczono limit prób skontaktuj się z przełożonym.";
     }else
     {
     licznik--;
