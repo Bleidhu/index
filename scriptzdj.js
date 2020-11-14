@@ -44,15 +44,15 @@ function komunikat()
   haslo = haslo.replace(/\s/g, '') 
   if(haslo == "WIEWIÓRY")
   {
-    document.getElementById("wiew").innerHTML = "wiewióry";
+    document.getElementById("wiew").innerHTML = "<div><h3>WITAJ W ODDZIALE Wiewióry</h3> <br> <p>Twoją następną akcją jest zrobienie sobie zdjęcia w ciekawym miejscu w Krakowie, następnie wyślij je do przełożonego w celu potwierdzenia wykonania.</p></div>";
     colorek="black";
   }else if(haslo == "PUCHACZE")
   {
-    document.getElementById("puch").innerHTML = "puchacze";
+    document.getElementById("puch").innerHTML = "<div><h3>WITAJ W ODDZIALE Puchacze</h3> <br> <p>Twoją następną akcją jest zrobienie sobie zdjęcia w ciekawym miejscu w Krakowie, następnie wyślij je do przełożonego w celu potwierdzenia wykonania.</p></div>";
     colorek="black";
   } else if(haslo == "JASTRZĘBIE")
   {
-    document.getElementById("jastrz").innerHTML = "jastrzębie";
+    document.getElementById("jastrz").innerHTML = "<div><h3>WITAJ W ODDZIALE Jastrzębie</h3> <br> <p>Twoją następną akcją jest zrobienie sobie zdjęcia w ciekawym miejscu w Krakowie, następnie wyślij je do przełożonego w celu potwierdzenia wykonania.</p></div>";
     colorek="black";
   }
 }
