@@ -35,13 +35,16 @@ function authorize()
     colorek = '#0000FF'
     if(jastrzebie.includes(inicjaly))
     {
-      alert("Idź na północ od twojej lokalizacji. Tam stosując się do przepisów dotrzesz do kilku drzew, jedno z nich jest mocno związane z naszą organizacją. Jeżeli nie jesteś pewny przypomnij sobie maila.");
+      alert("jabłko + strzała + ę + niebieski");
+      window.location.href = "./jastrzebie.html";
     } else if(puchacze.includes(inicjaly))
     {
-      alert("W zasięgu twojego wzroku znajduje się agent, który Cię obserwuje, znajdź go a on poda Ci kolejne wskazówki.");
+      alert("pudełko + choinka + spinacz + e");
+      window.location.href = "./puchacze.html";
     } else if(wiewiorki.includes(inicjaly))
     {
-      alert("Na południe od twojej lokalizacji znajduje się budynek, za którym musisz skręcić w alejkę po lewej stronie tam czeka na Ciebie agent. Pamiętaj, że jest niebezpiecznie i nie możesz zostać zdemaskowany. Dosiądź się do niego, a on da Ci kolejne wskazówki.");
+      alert("wieża + widelec + góry");
+      window.location.href = "./wiewiorki.html";
     }
   } else 
   {
