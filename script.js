@@ -35,15 +35,15 @@ function authorize()
     colorek = '#0000FF'
     if(jastrzebie.includes(inicjaly))
     {
-      alert("jabłko + strzała + ę + niebieski");
+      alert("rozwiąż rebus: \n jabłko + strzała + ę + niebieski \n - błko \n - ała \n - nie \n - ski");
       window.location.href = "./jastrzebie.html";
     } else if(puchacze.includes(inicjaly))
     {
-      alert("pudełko + choinka + spinacz + e");
+      alert("rozwiąż rebus: \n pudełko + choinka + spinacz + e \n - dełko \n - oinka \n - spin");
       window.location.href = "./puchacze.html";
     } else if(wiewiorki.includes(inicjaly))
     {
-      alert("wieża + widelec + góry");
+      alert("rozwiąż rebus: \n wieża + widelec + góry \n - ża \n - delec \n - g");
       window.location.href = "./wiewiorki.html";
     }
   } else 
